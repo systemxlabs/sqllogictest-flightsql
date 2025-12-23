@@ -1,0 +1,19 @@
+[package]
+name = "sqllogictest-flightsql"
+version = "0.1.0"
+edition = "2024"
+repository = "https://github.com/systemxlabs/sqllogictest-flightsql"
+homepage = "https://github.com/systemxlabs/sqllogictest-flightsql"
+license = "MIT"
+
+[dependencies]
+arrow = "57"
+arrow-flight = { version = "57", features = ["flight-sql-experimental"] }
+async-trait = "0.1"
+bigdecimal = "0.4.8"
+futures = "0.3"
+half = { version = "2.7.0" }
+itertools = "0.14"
+sqllogictest = "0.29"
+thiserror = "2.0"
+tonic = "0.14"
