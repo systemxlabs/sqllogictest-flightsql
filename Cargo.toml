@@ -2,9 +2,13 @@
 name = "sqllogictest-flightsql"
 version = "0.1.0"
 edition = "2024"
+authors = ["lewiszlw <lewiszlw520@gmail.com>"]
+description = "A sqllogictest runner for Flight SQL protocol supported databases"
+keywords = ["sqllogictest", "SQL", "database", "flightsql"]
 repository = "https://github.com/systemxlabs/sqllogictest-flightsql"
 homepage = "https://github.com/systemxlabs/sqllogictest-flightsql"
 license = "MIT"
+readme = "README.md"
 
 [dependencies]
 arrow = "57"
