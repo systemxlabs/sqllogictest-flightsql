@@ -10,7 +10,13 @@ A sqllogictest runner for Flight SQL protocol supported databases.
 #[tokio::test]
 async fn sqllogictest() -> Result<(), Box<dyn std::error::Error>> {
     let mut tester = sqllogictest::Runner::new(|| async {
-        FlightSqlDB::new_from_endpoint("demo-db", "http://localhost:50050").await
+        FlightSqlDB::new_from_endpoint(
+            "demo-db",
+            "http://localhost:50050",
+            "admin",
+            "password",
+        )
+        .await
     });
     tester.with_column_validator(sqllogictest::strict_column_validator);
 

@@ -21,3 +21,7 @@ itertools = "0.14"
 sqllogictest = "0.29"
 thiserror = "2.0"
 tonic = "0.14"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+tokio-stream = { version = "0.1", features = ["net"] }
