@@ -11,8 +11,8 @@ license = "MIT"
 readme = "README.md"
 
 [dependencies]
-arrow = "60"
-arrow-flight = { version = "60", features = ["flight-sql"] }
+arrow = "59"
+arrow-flight = { version = "59", features = ["flight-sql"] }
 async-trait = "0.1"
 bigdecimal = "0.4.8"
 futures = "0.3"
