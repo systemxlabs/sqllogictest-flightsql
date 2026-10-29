@@ -103,7 +103,7 @@ pub fn convert_batches(
         if !schema.contains(&batch.schema()) {
             return Err(FlightSqlLogicTestError::Other(format!(
                 "Schema mismatch. Previously had\n{:#?}\n\nGot:\n{:#?}",
-                &schema,
+                schema,
                 batch.schema()
             )));
         }

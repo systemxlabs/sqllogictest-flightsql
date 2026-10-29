@@ -1,6 +1,6 @@
 [package]
 name = "sqllogictest-flightsql"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2024"
 authors = ["lewiszlw <lewiszlw520@gmail.com>"]
 description = "A sqllogictest runner for Flight SQL protocol supported databases"
@@ -11,14 +11,14 @@ license = "MIT"
 readme = "README.md"
 
 [dependencies]
-arrow = "57"
-arrow-flight = { version = "57", features = ["flight-sql-experimental"] }
+arrow = "59"
+arrow-flight = { version = "59", features = ["flight-sql"] }
 async-trait = "0.1"
 bigdecimal = "0.4.8"
 futures = "0.3"
 half = { version = "2.7.0" }
 itertools = "0.14"
-sqllogictest = "0.29"
+sqllogictest = "0.29.1"
 thiserror = "2.0"
 tonic = "0.14"
 
